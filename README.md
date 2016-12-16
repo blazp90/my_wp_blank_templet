@@ -1,0 +1,1 @@
+# my_wp_blank_templet
