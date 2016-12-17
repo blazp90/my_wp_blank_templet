@@ -3,7 +3,9 @@ Theme Name: My WP blank themplet
 Theme URI: http://wordpress.org/themes/twentythirteen
 Author: Blaž Poglovnik
 Author URI: http://blaz.poglovnik.eu/
-Description: *EDIT***The 2013 theme for WordPress takes us back to the blog, featuring a full range of post formats, each displayed beautifully in their own unique way. Design details abound, starting with a vibrant color scheme and matching header images, beautiful typography and icons, and a flexible layout that looks great on any device, big or small.****
+Description: ***EDIT***
+The 2013 theme for WordPress takes us back to the blog, featuring a full range of post formats, each displayed beautifully in their own unique way. Design details abound, starting with a vibrant color scheme and matching header images, beautiful typography and icons, and a flexible layout that looks great on any device, big or small.
+*******
 Version: 0.1
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -13,3 +15,29 @@ Text Domain: my_wp_blank_templet
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
+
+/**
+ * WP header.php
+ */
+#header {
+	background: #90a090;
+	border-bottom: double 3px #aba;
+	border-left: solid 1px #9a9;
+	border-right: solid 1px #565;
+	border-top: solid 1px #9a9;
+	font: italic normal 230% 'Times New Roman', Times, serif;
+	letter-spacing: 0.2em;
+	margin: 0;
+	padding: 15px 10px 15px 60px;
+}
+
+#header {
+  background: url("<?php bloginfo('stylesheet_directory'); ?>/images/wc_header.jpg") 
+  no-repeat bottom center; 
+}
+
+#headerimg  {
+  margin: 7px 9px 0; 
+  height: 192px; 
+  width: 740px; 
+}
