@@ -1,5 +1,6 @@
 <?php
-    include "header.php";
+    //include "header.php";
+get_header();
 ?>
 <body>
         <div class="th-navi">
@@ -69,4 +70,7 @@
         </div><!-- container -->
 
 
-<?php include "footer.php"; ?>
+<?php 
+    //include "footer.php"; 
+    get_footer();
+?>
