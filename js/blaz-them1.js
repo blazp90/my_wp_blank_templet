@@ -28,7 +28,7 @@ jQuery(document).ready(function ()
     /**On screen scroll**/
     jQuery(document).scroll(function ()
     {
-        if (jQuery(".th-navi").height() != "100")
+        if (jQuery(".th-navi").height() != "0")
         {
             if (get_top_px() > 250)
             {
