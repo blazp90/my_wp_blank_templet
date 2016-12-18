@@ -8,6 +8,7 @@
     background-color: rgba(0, 0, 0, 0.01);
     display: inline;
     width: 100%;
+    padding-top: 20px;
     min-height: 100px;
     max-height: 250px;
     overflow: hidden;

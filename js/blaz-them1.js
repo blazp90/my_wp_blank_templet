@@ -77,6 +77,12 @@ jQuery(document).ready(function ()
     if (screen_width < 400)
     {
         var new_width = "100%";
+    } else if (screen_width < 500) 
+    {
+        var new_width = "60%";
+    } else if (screen_width < 800) 
+    {
+        var new_width = "40%";
     } else
     {
         var new_width = "30%";

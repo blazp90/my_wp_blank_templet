@@ -4,7 +4,7 @@ get_header();
 ?>
 <body>
         <div class="th-navi">
-            <a href="#title"><h1 class="th-nav-title">Naslov ki dejansko malo dalsi kot obicajno bla bla Naslov ki dejansko malo dalsi kot obicajno bla bla Naslov ki dejansko malo dalsi kot obicajno bla bla Naslov ki dejansko malo dalsi kot obicajno bla bla </h1></a>
+            <a href="<?php bloginfo( 'wpurl' );?>"><h1 class="th-nav-title">Naslov ki dejansko malo dalsi kot obicajno bla bla Naslov ki dejansko malo dalsi kot obicajno bla bla Naslov ki dejansko malo dalsi kot obicajno bla bla Naslov ki dejansko malo dalsi kot obicajno bla bla </h1></a>
             
             <a href="#navi" class="th-nav-call-menu">&#x2632;</a>
         </div>
@@ -15,7 +15,7 @@ get_header();
             </div>
             <div class="th-container">
                 <div>
-                    <h1 class="th-container-title">Page Title</h1>
+                    <a href="<?php bloginfo( 'wpurl' );?>"><h1 class="th-container-title"><?php echo get_bloginfo( 'name' ); ?></h1></a>
                     <div class="th-container-left">
                         <article>
                             <section>
@@ -64,7 +64,11 @@ get_header();
                     </div>
                 </div>
                 <div class="th-sidebar">
-                    sidebar
+                    <?php if ( is_active_sidebar( 'right-sidebar' ) ) : ?>
+	                   <ul id="sidebar">
+		               <?php dynamic_sidebar( 'right-sidebar' ); ?>
+	                   </ul>
+                    <?php endif; ?>
                 </div>
             </div>
         </div><!-- container -->

@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
         
-        <title><?php wp_title('name'); ?></title>
+        
 
         <!--<link rel="stylesheet" href="css/blaz_them1.css">
         <link rel="stylesheet" href="css/navi-left.css">-->
